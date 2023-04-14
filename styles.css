@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F9F9F9;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+}
+
+/* NAVBAR */
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: #0A2463;
+    color: #F9F9F9;
+    padding: 0.5rem;
+    height: 100vh;
+    width: auto;
+    position: fixed;
+}
+
+#navbar header {
+    padding: 0 0.5rem;
+}
+
+h1, h1 span {
+    font-size: 3rem;
+    display: block;
+}
+
+#navbar ul {
+    list-style-type: none;
+}
+
+#navbar li {
+    padding: 0.25rem 0.5rem;
+}
+
+#navbar a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #F9F9F9;
+}
+
+#navbar a:hover {
+    font-weight: bold;
+    color: #CA054D;
+}
+
+/* MAIN SECTION */
+
+#main-doc {
+    margin-left: 18%;
+    padding: 2rem;
+}
+
+.main-section {
+    width: 90%;
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+    color: #CA054D;
+}
+
+.code-container {
+    background-color: black;
+    width: 80%;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+code {
+    color: white;
+    font-family: monospace;
+}
+
+.main-section ul {
+    margin-left: 1rem;
+    list-style-type: circle;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.pink {
+    color: #CA054D;
+}
+
+hr {
+    border: 2px solid #5AA9E6;
+}
+
+footer a {
+    color: #CA054D;
+    font-weight: bold;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+    }
+
+    #navbar {
+        width: 100%;
+        height: auto;
+        position: absolute;
+    }
+    
+    #navbar ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #main-doc {
+        margin-left: 0;
+        margin-top: 15%;
+    }
+
+    h1, h1 span {
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #main-doc {
+        margin-top: 35%;
+    }
+}
+
